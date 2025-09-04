@@ -1,0 +1,4 @@
+
+68b10cffc155b;chevrolet;onix;2015;autaso;auto;1222222;chevrolet_1.jpg;chevrolet_2.jpg;chevrolet_3.jpg
+68b112b80e3a5;HONDA;tornado;2025;leyenda;moto;12000000;HONDA_1.png;HONDA_2.png;HONDA_3.png
+68b11776155bc;TOYOTA;hilux;2023;camioneta para trabajar;camioneta;23000000;TOYOTA_1.jpg;TOYOTA_2.jpg;TOYOTA_3.jpg

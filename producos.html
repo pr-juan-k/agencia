@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Productos / Automotores</title>
+  <meta content="Encuentra tu próximo vehículo en nuestra agencia. Amplia selección de autos, camionetas y motos usados, con la mejor financiación y garantía. Compra, vende o permuta con confianza." name="description">
+<meta content="agencia de autos, venta de autos usados, autos usados, compra de autos, permuta de autos, financiación de vehículos, camionetas usadas, motos usadas, concesionaria de autos, vehículos seminuevos" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/carpint/favicon.jpg" rel="icon">
+  <link href="assets/img/carpint/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .titulo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .busqueda {
+      display: flex;
+      align-items: center;
+    }
+
+    .busqueda input[type="text"] {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .busqueda button {
+      margin-left: 5px;
+      padding: 5px 10px;
+      border: none;
+      background-color: #444;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .busqueda button:hover {
+      background-color: #666;
+    }
+  </style>
+
+<body class="index-page">
+
+  <!-- Menú lateral -->
+  
+
+  <header id="header" class="header dark-background d-flex flex-column"> 
+
+<i class="header-toggle d-xl-none bi bi-list"></i>
+
+<div class="profile-img">
+  <img src="assets/img/agencia/logo_2.jpg" alt="" class="img-fluid rounded-circle">
+</div>
+
+<a href="index.html" class="logo d-flex align-items-center justify-content-center">
+  <h4>Automotores</h4>
+</a>
+
+<div class="social-links text-center">
+  <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+  <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+  <a href="https://wa.me/5493815088924" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+</div>
+
+<nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="index.html"><i class="bi bi-house-door navicon"></i> Inicio</a></li>
+      <li><a href="index.html"><i class="bi bi-car-front navicon"></i> Vehiculos</a></li>
+      <li><a href="index.html"><i class="bi bi-credit-card navicon"></i> pagos y creditos admitidos</a></li>
+      <li><a href="index.html"><i class="bi bi-arrow-left-right navicon"></i> Condiciones de permuta</a></li>
+      <li><a href="index.html"><i class="bi bi-geo-alt navicon"></i> Como Llegar</a></li>    
+      <li><a href="#sobrenosotros"><i class="bi bi-person-circle navicon"></i> Sobre nosotros</a></li>
+      <li><a href="#comentario"><i class="bi bi-chat-dots navicon"></i> Alguna otra consulta</a></li>
+  
+    </ul>
+  </nav>
+
+</header>
+
+  <main class="main">
+
+  
+
+<style>
+    /* Tu CSS existente */
+    #carouselProducto .carousel-indicators {
+        position: static; /* Esto es crucial para que se posicionen en el flujo normal del documento */
+        margin-top: 1rem;
+        /* Inicializamos el contador */
+        counter-reset: slide-counter;
+        /* Aseguramos que se centren */
+        justify-content: center; 
+    }
+
+    #carouselProducto .carousel-indicators [data-bs-target] {
+        /* Estilo base del círculo */
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ccc;
+        color: #fff;
+        font-weight: bold;
+        text-indent: 0;
+        margin: 0 5px;
+        opacity: 0.8;
+        transition: opacity .6s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+        /* Flexbox para centrar el número */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #carouselProducto .carousel-indicators [data-bs-target]::before {
+        /* Incrementamos y mostramos el contador */
+        counter-increment: slide-counter;
+        content: counter(slide-counter);
+    }
+
+    #carouselProducto .carousel-indicators .active {
+        opacity: 1;
+        background-color: #343a40; /* Color de fondo para el indicador activo (dark) */
+    }
+    
+    /* Estilo para las flechas del carrusel para que resalten */
+    #carouselProducto .carousel-control-prev-icon,
+    #carouselProducto .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 1.2rem;
+    }
+
+    /* Opcional: Aumentar el tamaño de las flechas si lo deseas */
+    #carouselProducto .carousel-control-prev-icon,
+    #carouselProducto .carousel-control-next-icon {
+        width: 3rem; /* Más grande */
+        height: 3rem; /* Más grande */
+        background-size: 100% 100%; /* Ajusta el icono a la nueva talla */
+    }
+</style>
+
+  <!-- section de producto destacado -->
+  <section id="producto-destacado" class="section py-5" style="background-color: #f5f5f5; position: relative;">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            
+            <div class="col-lg-6 col-md-8 mb-4 text-center">
+                <img id="producto-imagen" 
+                    src="assets/img/vehiculos/camioneta1.jpg" 
+                    class="img-fluid rounded shadow-sm" 
+                    alt="Nombre del Producto">
+
+                <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+                    <button class="color-selector btn rounded-circle border" 
+                            style="background-color: #ccc; width: 50px; height: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: transform 0.3s;" 
+                            onclick="cambiarImagen('assets/img/vehiculos/camioneta1.jpg')">
+                    </button>
+                    <button class="color-selector btn rounded-circle border" 
+                            style="background-color: #999; width: 50px; height: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: transform 0.3s;" 
+                            onclick="cambiarImagen('assets/img/vehiculos/camioneta2jpg')">
+                    </button>
+                    <button class="color-selector btn rounded-circle border" 
+                            style="background-color: #666; width: 50px; height: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: transform 0.3s;" 
+                            onclick="cambiarImagen('assets/img/vehiculos/camioneta3jpg')">
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-10 text-center text-lg-start">
+                <h2 class="mb-3">Toyota</h2>
+                <p style="margin: 3px;  font-size: 14px;">
+                    <i class="bi bi-gear-fill me-2"></i>Modelo: Tornado
+                </p>
+                <p style="margin: 3px;  font-size: 14px;">
+                    <i class="bi bi-calendar-fill me-2"></i>Año: 2025
+                </p>
+                <p style="margin: 3px; font-size: 14px;">
+                    <i class="bi bi-info-circle-fill me-2"></i>Descripción: Todo Terreno
+                </p>
+                <p style="color: #4caf50; font-weight: bold; font-size: 18px;">$8.000.00</p>
+            <button class="btn btn-success mt-auto" onclick="programarVista()" style="font-size: 14px;">
+                <i class="bi bi-car-front"></i> Cordinar Visita
+            </button>
+            
+        </div>
+    </div>
+</section>
+
+<script>
+    //funcion para mensaje 
+    
+    function programarVista() {
+                       
+                        // Mensaje pre-escrito
+                        const mensaje = `Hola, estoy interesado en programar una visita para ver el vehículo: Toyota hilux 2022. El precio es $16.000.000. ¿Podemos coordinar un horario?`;
+
+                        // Codifica el mensaje para que sea válido en la URL
+                        const mensajeCodificado = encodeURIComponent(mensaje);
+
+                        // Reemplaza con tu número de WhatsApp completo (código de país + número)
+                        const numeroWhatsApp = '5493815088924'; // <<-- ¡MODIFICA ESTO CON TU NÚMERO!
+
+                        // Construye el enlace de WhatsApp
+                        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
+
+                        // Abre el enlace en una nueva pestaña
+                        window.open(urlWhatsApp, '_blank');
+                    }
+    // Función para cambiar la imagen principal del producto
+    function cambiarImagen(nuevaImagenSrc) {
+        const productoImagen = document.getElementById('producto-imagen');
+        if (productoImagen) {
+            productoImagen.src = nuevaImagenSrc;
+        }
+    }
+
+    // Funcionalidad del carrito (opcional)
+    document.getElementById('boton-agregar-carrito').addEventListener('click', function() {
+        alert('Producto de ejemplo agregado al carrito.');
+    });
+</script>
+   
+
+      
+   
+  
+    
+
+    <section id="testimonials" class="testimonials section light-background">
+
+            <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonios</h2>
+        <p>Lo que nuestros clientes felices dicen sobre su experiencia de compra con nosotros</p>
+      </div>    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Estoy feliz con mi nueva camioneta. El servicio y el asesoramiento fueron de primera. ¡Los recomiendo 100%!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Cliente 2">
+                
+                <h3>Lucía Fernández</h3>
+                <h4>Compradora de Camioneta</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>La atención fue excelente y me ayudaron a encontrar el auto ideal para mi familia. ¡Un proceso muy rápido y claro!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Cliente 1">
+                <h3>Carlos Méndez</h3>
+                <h4>Comprador de Auto Familiar</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Comprar mi moto aquí fue una gran decisión. El vehículo estaba en perfectas condiciones y el papeleo fue muy ágil.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Cliente 3">
+                <h3>Romina López</h3>
+                <h4>Compradora de Moto</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>El equipo me guió en cada paso para conseguir el financiamiento. Me llevo el auto de mis sueños sin complicaciones. ¡Gracias!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="Cliente 4">
+                <h3>Matías Gómez</h3>
+                <h4>Comprador Satisfecho</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>La calidad de los autos es excelente, superó mis expectativas. Ahora estoy pensando en comprarle un auto a mi hija aquí.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="Cliente 5">
+                <h3>John Larson</h3>
+                <h4>Cliente Recurrente</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+ 
+ </div>
+ 
+</section>
+    <!-- /Testimonials Section -->
+
+    <!-- comentario -->
+    <section id="comentario" class="contact section">
+
+<div class="container section-title" data-aos="fade-up">
+    <h2>Alguna otra consulta</h2>
+    <p>¿Alguna duda sobre algun vehiculo? </p>
+</div><div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 justify-content-center">
+
+        <div class="col-lg-8">
+            <form id="whatsappForm" class="php-email-form" data-aos="fade-up" data-aos-delay="200" onsubmit="return sendCommentToWhatsApp(event);">
+                <div class="row gy-4">
+
+                    <div class="col-md-6">
+                        <label for="name-field" class="pb-2">Tu nombre</label>
+                        <input type="text" name="name" id="name-field" class="form-control" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="tel-field" class="pb-2">Tu WhatsApp (opcional)</label>
+                        <input type="tel" class="form-control" name="tel" id="tel-field" placeholder="Ej: 381-000-000">
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="message-field" class="pb-2">Tu Consulta</label>
+                        <textarea class="form-control" name="message" rows="6" id="message-field" placeholder="Escribí tu experiencia o sugerencia..." required></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                        <div class="loading" style="display: none;">Preparando mensaje...</div>
+                        <div class="error-message" style="display: none;"></div>
+                        <div class="sent-message" style="display: none;">Redirigiendo a WhatsApp...</div>
+
+                        <button type="submit">Enviar Consulta por WhatsApp</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</section>
+    <!-- /comentario -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Automotores</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+       
+        Designed by <a href="#">Program.JK</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Botón WhatsApp -->
+  <a href="https://wa.me/5493815088924" target="_blank" id="whatsapp-button" class="whatsapp-button d-flex align-items-center justify-content-center">
+<i class="bi bi-whatsapp"></i></a>
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+main{
+    background-color: rgb(0, 0, 0);
+    padding: 2em;
+    width: 60vh;
+    margin: auto;
+    border-radius: 1em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0.7em;
+    padding-bottom: 2em;
+
+}
+p{
+    color: gray;
+}
+#bt{
+    width: 35%;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: solid 0.1em rgb(255, 255, 255);
+    border-radius: 0.4em;
+    margin: auto;
+    padding: 0.6em;
+    font-size:1em;
+    
+}
+label{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-bottom: 1.5em;
+    
+}
+input{
+    padding: 1em;
+    border-radius: 0.5em;
+}
+h2{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 2em;
+}

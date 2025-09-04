@@ -1,0 +1,6 @@
+admin;admin123
+
+usuario;clave456
+
+test;pass789
+juank;juank
